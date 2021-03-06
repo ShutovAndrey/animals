@@ -11,13 +11,25 @@ abstract class AbstractAnimal extends Model implements Animal
     private $male_names = ['Фокс', 'Джек', 'Тaйсон', 'Альфа', 'Татошка', 'Риччи'];
     private $female_names = ['Иди жрать', 'Нюша', 'Ася', 'Ешка'];
 
-    public abstract function type(): string;
+    public function type(): string
+    {
+        return $this->type;
+    }
 
-    public abstract function name(): string;
+    public function name(): string
+    {
+        return $this->name;
+    }
 
-    public abstract function sex(): string;
+    public function sex(): string
+    {
+        return $this->sex;
+    }
 
-    public abstract function weight(): float;
+    public function weight(): float
+    {
+        return $this->weight;
+    }
 
     public function __toString(): string
     {

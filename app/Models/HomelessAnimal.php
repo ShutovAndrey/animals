@@ -17,24 +17,5 @@ class HomelessAnimal extends AbstractAnimal
         'weight',
     ];
 
-    public function type(): string
-    {
-        return $this->type;
-    }
-
-    public function name(): string
-    {
-        return $this->name;
-    }
-
-    public function sex(): string
-    {
-        return $this->sex;
-    }
-
-    public function weight(): float
-    {
-        return $this->weight;
-    }
 }
 
